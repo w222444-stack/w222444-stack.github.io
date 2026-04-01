@@ -39,7 +39,7 @@ body {
 }
 
 /* Контейнери */
-.bbc-container {
+.bbc-container, .article {
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
@@ -96,13 +96,7 @@ body {
 }
 
 /* Стилі для сторінки статті */
-.article-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.full-article h1 {
+.article h1 {
     font-size: 40px;
     margin-bottom: 10px;
 }
@@ -114,12 +108,14 @@ body {
     padding-bottom: 20px;
 }
 
-.article-main-img {
+.article img {
     width: 100%;
+    max-width: 800px;
+    height: auto;
     margin: 25px 0;
 }
 
-.article-body p {
+.article p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
