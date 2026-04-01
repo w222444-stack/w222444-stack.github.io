@@ -1,0 +1,82 @@
+
+body {
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  
+  /* Обмежуємо ширину контенту, наприклад, до 1200px */
+    max-width: 1200px;
+    
+    /* Центруємо весь вміст сторінки */
+    margin: 0 auto;
+}
+
+.bbc-header {
+  background: #000;
+  color: white;
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.bbc-logo {
+  background: #fff;
+  color: #000;
+  padding: 5px 10px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.bbc-lang {
+  font-size: 14px;
+}
+
+.bbc-nav {
+  background: #b80000;
+  padding: 10px 20px;
+}
+
+.bbc-nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.bbc-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.main-news {
+  display: flex;
+  gap: 20px;
+}
+
+.news-grid {
+    display: grid;
+    /* Створюємо три колонки однакової ширини */
+    grid-template-columns: repeat(3, 1fr); 
+    
+    /* Додаємо відступи: 40px між рядами та 20px між колонками */
+    gap: 40px 40px; 
+    
+    /* Додаємо загальний відступ зверху, щоб відсунути сітку від верхнього блоку */
+    margin-top: 50px; 
+}
+
+
+.news-grid article {
+  margin-bottom: 10px; /* відступ знизу під кожною новиною */
+}
+
+.news-grid article img {
+    width: 100%;    /* щоб картинка займала всю ширину своєї колонки */
+    height: auto;   /* щоб зберігалися пропорції */
+    display: block;
+    margin-bottom: 15px; /* відступ між картинкою та заголовком (Політика, Світ тощо) */
+}
+
+img {
+    max-width: 100%; /* щоб велика картинка не вилазила за межі екрана */
+    height: auto;
+}
